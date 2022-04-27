@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body {
+	background: #f1b89d;
+}
+h1 {
+	font-family: 'Lobster', cursive;
+
+}
+p {
+	font-family: 'Comfortaa', cursive;
+}
+.menu li {
+	display: inline-block;
+	margin: 10px;
+}
+.primero{
+	color: #4b5d7c;
+}
