@@ -13,6 +13,27 @@ p {
 	display: inline-block;
 	margin: 10px;
 }
-.primero{
+.primero {
 	color: #4b5d7c;
+}
+.textprimero {
+	color: orange;
+}
+.segundo {
+	color: ret;
+}
+.textsegundo{
+ 	color: blueviolet;
+}
+.tercero {
+	color: yellow;
+}
+.texttercero {
+	color: gainsboro;
+}
+.cuarto {
+	color: mediumseagreen;
+}
+.textcuarto {
+	color: orangered;
 }
