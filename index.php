@@ -8,13 +8,15 @@
 		<!-- CSS only -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-		<link rel="stylesheet" href="estilos.css">	
+		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/estilos.css">	
 
 	</head>
 	<body>
 		<header class="container">
 			<center>
 				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv_UmK3pCeU7oB59KwTOnCfrSeOOpWFDjL0A&usqp=CAU" width="200">
+
+				<h1><?php bloginfo('name'); ?></h1>
 
 				<ul class="menu">
 					<li><a href="#">Inicio</a></li>
@@ -26,7 +28,15 @@
 		</header>
 		<section class="container">
 
+			<?php $articulos = new wp_Query([
+                        'showposts' => 3,
+                    ]);
+			while ($articulos->have_posts()) {
+				$articulos->the_post();
 
+				the_title();
+				echo '<hr>';
+			} ?>
 
 		   <center><h1 class="primero"><b>Última hora de la guerra en Ucrania, en directo | Zelenski afirma que Rusia ha rechazado una propuesta de tregua por la Pascua ortodoxa</b></h1></center>
 
