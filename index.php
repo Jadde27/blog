@@ -32,11 +32,29 @@
                         'showposts' => 3,
                     ]);
 			while ($articulos->have_posts()) {
-				$articulos->the_post();
+				$articulos->the_post(); ?>
 
-				the_title();
-				echo '<hr>';
-			} ?>
+
+
+
+
+				<center><h1 class="primero"><b><?php the_title(); ?></b></h1></center>
+
+		   <br>
+	   <center><?php the_post_thumbnail("medium"); ?></center>
+		   <br>
+
+		    <center><?php the_excerpt(); ?></center>
+		    <br>
+
+
+
+
+
+
+			<?php } ?>
+			
+			
 
 		   <center><h1 class="primero"><b>Última hora de la guerra en Ucrania, en directo | Zelenski afirma que Rusia ha rechazado una propuesta de tregua por la Pascua ortodoxa</b></h1></center>
 
