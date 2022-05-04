@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 body {
-	background: #0a4350;
-	
+	background: #92ddcb;
 }
 h1 {
 	font-family: 'Lobster', cursive;
@@ -37,4 +36,8 @@ p {
 }
 .textcuarto {
 	color: orangered;
+}
+.caja {
+	border: 1px solid black;
+	margin-bottom: 20px;
 }
