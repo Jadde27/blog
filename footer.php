@@ -6,5 +6,6 @@
 				<li><a href="http://www.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 			</ul>
 		</footer>
+		<?php wp_footer(); ?>
 	</body>
 </html>
