@@ -5,8 +5,9 @@
 
 			<?php $articulos = new wp_Query([
                         'showposts' => 3,
+                        'post_type' => 'empleos'
                     ]);
-			while ($articulos->have_posts()) {
+				while ($articulos->have_posts()) {
 				$articulos->the_post(); ?>
 
 
