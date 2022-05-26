@@ -8,6 +8,9 @@
 	"public" => true
 	]);
 
+	register_nav_menus([
+		'principal' => 'Zona principal'
+	]);
 
 	}
 
